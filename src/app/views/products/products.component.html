@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Lista de Productos</h2>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.nombre }}</td>
+        <td>{{ product.precio | currency }}</td>
+        <td>
+          <button mat-icon-button color="accent" [routerLink]="['/product', product.id]" matTooltip="Ver detalles">
+            <mat-icon>visibility</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
