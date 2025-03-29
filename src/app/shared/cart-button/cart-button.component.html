@@ -1,0 +1,9 @@
+<button mat-fab
+        color="accent"
+        class="cart-fab"
+        [matBadge]="cartItemCount"
+        matBadgeColor="warn"
+        (click)="goToCart()"
+        aria-label="Ver carrito">
+  <mat-icon>shopping_cart</mat-icon>
+</button>

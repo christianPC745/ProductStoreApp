@@ -1,0 +1,11 @@
+.cart-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.cart-fab:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,36 @@
+/* products.component.css */
+.product-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table-header {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+.action-button {
+  transition: transform 0.2s;
+}
+
+.action-button:hover {
+  transform: scale(1.2);
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.about-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.about-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,13 @@
+/* about.component.css */
+.about-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tech-list {
+  padding-left: 20px;
+}
+
+.tech-list li {
+  margin-bottom: 8px;
+}

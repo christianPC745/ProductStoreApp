@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -13,4 +14,10 @@ export class ProductsComponent {
     { id: 4, nombre: 'Teclado Mecánico Redragon', precio: 1299 },
     { id: 5, nombre: 'Mouse Inalámbrico Logitech', precio: 799 }
   ];
+
+  constructor(private router: Router) {}
+
+  goToAbout() {
+    this.router.navigate(['/about']);
+  }
 }

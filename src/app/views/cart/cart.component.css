@@ -1,0 +1,19 @@
+/* cart.component.css */
+.cart-item {
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.03);
+}
+
+.cart-image {
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px;
+}

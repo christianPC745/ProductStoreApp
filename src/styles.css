@@ -1,2 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary: #3f51b5;
+  --accent: #ff4081;
+  --warn: #f44336;
+  --light-text: #ffffff;
+  --dark-text: #212121;
+}
+
+/* Fuente y colores base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #3f51b5; /* Azul Material */
+  font-weight: 500;
+}
+
+/* Botones */
+.mat-raised-button {
+  margin: 8px !important;
+}
+
+/* Cards */
+mat-card {
+  margin: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+mat-card {
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+mat-card-header {
+  background: var(--primary);
+  color: var(--light-text);
+  padding: 16px !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  mat-card {
+    margin: 8px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .welcome-card {
+    margin: 20px auto !important;
+  }
+
+  .detail-card {
+    padding: 15px !important;
+  }
+}

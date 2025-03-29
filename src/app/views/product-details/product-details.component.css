@@ -1,0 +1,12 @@
+/* product-details.component.css */
+.detail-card {
+  max-width: 500px;
+  margin: 30px auto !important;
+  padding: 25px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #e91e63; /* Rosa Material */
+  font-weight: bold;
+}
